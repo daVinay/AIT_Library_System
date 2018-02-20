@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{59600BCC-75F4-4759-B976-567896AB9FBA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AITLibrary</RootNamespace>
+    <AssemblyName>AITLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBook.Designer.cs">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookReservedBorrowed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookReservedBorrowed.Designer.cs">
+      <DependentUpon>BookReservedBorrowed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReserveBorrowBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReserveBorrowBook.Designer.cs">
+      <DependentUpon>ReserveBorrowBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchBook.Designer.cs">
+      <DependentUpon>SearchBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Template.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Template.Designer.cs">
+      <DependentUpon>Template.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddBook.resx">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookReservedBorrowed.resx">
+      <DependentUpon>BookReservedBorrowed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReserveBorrowBook.resx">
+      <DependentUpon>ReserveBorrowBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <EmbeddedResource Include="SearchBook.resx">
+      <DependentUpon>SearchBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template.resx">
+      <DependentUpon>Template.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{C2A20C2A-5EF2-499F-985E-E71492DCB7EF}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\redDot.png" />
+    <None Include="Resources\add-folder-24.png" />
+    <None Include="Resources\view_41.131832797428px_1170615_easyicon.net.png" />
+    <None Include="Resources\download_manage_25.092979127135px_1143818_easyicon.net.png" />
+    <None Include="Resources\search_21.114369501466px_1197039_easyicon.net.png" />
+    <None Include="Resources\booking_24px_1169280_easyicon.net.png" />
+    <None Include="Resources\book-24.png" />
+    <None Include="Resources\book-19-24.png" />
+    <None Include="Resources\manage_users.png" />
+    <None Include="Resources\manage.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\booking.png" />
+    <None Include="Resources\book_borrow.png" />
+    <None Include="Resources\book_available.png" />
+    <None Include="Resources\book_all.png" />
+    <None Include="Resources\delete_icon.png" />
+    <None Include="Resources\return.png" />
+    <None Include="Resources\edit_icon.net.png" />
+    <None Include="Resources\trash_icon.net.png" />
+    <None Include="Resources\not_available2.ico" />
+    <None Include="Resources\not_available.ico" />
+    <None Include="Resources\available3.ico" />
+    <None Include="Resources\available2.ico" />
+    <None Include="Resources\available.ico" />
+    <None Include="Resources\icon_dot_red.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\Image\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
